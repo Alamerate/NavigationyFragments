@@ -24,12 +24,13 @@ private ImageView ivimage;
 private Button btnmanage;
 private  Context context;
     public ManageFragment() {
-      context = getActivity();
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        context = getActivity();
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_manage, container, false);
         //todo el codigo necesario para que el fragment funcione
